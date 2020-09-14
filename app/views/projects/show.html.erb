@@ -36,6 +36,15 @@
 
 <h2>Notes</h2>
 
+<%= form_with url: project_notes_path(@project),
+    local: true, method: :get, class: "form-inline mb-3" do |f| %>
+  <div class="form-group">
+    <%= f.label :term, class: "mr-2" %>
+    <%= f.search_field :term, class: "form-control mr-2" %>
+    <%= f.submit "Search Notes", class: "btn btn-primary" %>
+  </div>
+<% end %>
+
 <div class="list-group">
   <%= render @project.notes %>
 </div>
