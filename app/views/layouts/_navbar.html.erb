@@ -9,9 +9,20 @@
       <li class="nav-item">
         <%= link_to "Projects", projects_path, class: "nav-link" %>
       </li>
-      <li class="nav-item">
-        <%= link_to "Sign in", "#", class: "nav-link" %>
-      </li>
     </ul>
+    <uL class="navbar-nav mr-right">
+      <% if user_signed_in? %>
+        <li class="nav-item">
+          <%= link_to current_user.name, edit_user_registration_path, class:"nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class:"btn btn-outline-danger" %>
+        </li>
+      <% else %>
+        <li class="nav-item">
+          <%= link_to "Sign In", new_user_session_path, class:"btn btn-outline-primary" %>
+        </li>
+      <% end %>
+    </uL>
   </div>
 </nav>
