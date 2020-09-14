@@ -1,5 +1,9 @@
 <div class="note list-group-item">
   <%= simple_format note.message %>
+  <% if note.attachment.attached? %>
+    Attachment: <%= link_to note.attachment.filename, rails_blob_path(note.attachment) %>
+    (<%= note.attachment.content_type %>, <%= number_to_human_size(note.attachment.byte_size) %>)
+  <% end %>
   <div>
     <%= note.user_name %> |
     <%= time_ago_in_words(note.created_at) %> ago |

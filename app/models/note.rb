@@ -8,4 +8,13 @@ class Note < ApplicationRecord
   scope :search, ->(term) {
     where("message LIKE ?", "%#{term}")
   }
+
+  has_one_attached :attachment
+
+  validates :attachment, content_type: [
+    "image/jpeg",
+    "image/gif",
+    "image/png",
+    "application/pdf"
+  ]
 end
