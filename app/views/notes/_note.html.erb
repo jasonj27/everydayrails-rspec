@@ -4,11 +4,11 @@
     <%= note.user_name %> |
     <%= time_ago_in_words(note.created_at) %> ago |
     <%= link_to 'Edit', edit_project_note_path(note.project, note),
-        class: "btn btn-primary"
+        class: "btn btn-primary btn-sm"
     %>
     <%= link_to 'Delete', [note.project, note], method: :delete,
         data: { confirm: 'Are you sure?' },
-        class: "btn btn-danger"
+        class: "btn btn-danger btn-sm"
     %>
   </div>
 </div>

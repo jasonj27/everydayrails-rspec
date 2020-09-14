@@ -13,10 +13,26 @@
 </p>
 
 <div>
+  <%= link_to 'Add Task', new_project_task_path(@project), class: "btn btn-primary" %>
   <%= link_to 'Add Note', new_project_note_path(@project), class: "btn btn-primary" %>
   <%= link_to 'Edit', edit_project_path(@project), class: "btn btn-primary" %>
   <%= link_to 'Back', projects_path, class: "btn btn-primary" %>
 </div>
+
+<h2 class="mt-4" >Tasks</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <%= render @project.tasks %>
+  </tbody>
+</table>
 
 <h2>Notes</h2>
 
