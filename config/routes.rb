@@ -5,6 +5,9 @@ Rails.application.routes.draw do
     root to: 'projects#index', as: :authenticated_root
   end
 
-  resources :projects
+  resources :projects do
+    resources :notes
+  end
+
   root "home#index"
 end
