@@ -44,6 +44,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'solargraph', '~> 0.39.15'
+  gem 'faker', require: false #for sample data in dev
 end
 
 group :test do
