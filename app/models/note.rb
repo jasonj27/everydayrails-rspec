@@ -5,6 +5,8 @@ class Note < ApplicationRecord
   delegate :name, to: :user, prefix: true
   #note.user_name returns note.user.name
 
+  validates :message, presence: true
+
   scope :search, ->(term) {
     where("message LIKE ?", "%#{term}")
   }
