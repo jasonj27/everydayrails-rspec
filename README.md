@@ -1,24 +1,20 @@
-# README
+# Project Manger(WIP)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Demo site for learning Rails RSpec. (Test not include yet)
 
-Things you may want to cover:
+* Book: [Everyday Rails Testing with RSpec](https://leanpub.com/everydayrailsrspec)
 
-* Ruby version
+* [Demo site](https://everydayrails-rspec.herokuapp.com/) (host on Heroku, may need 30s to wake up) 
 
-* System dependencies
+* Ruby: 2.7.1
 
-* Configuration
+* Rails: 6.0.3.3
 
-* Database creation
+* CI tool: Travis-CI
 
-* Database initialization
+* Database: PostgreSQL
 
-* How to run the test suite
+* Email delivery service: [SendGrid](https://sendgrid.com/)
 
-* Services (job queues, cache servers, search engines, etc.)
+* Active storage service: [Google Cloud Storage](https://cloud.google.com/storage)
 
-* Deployment instructions
-
-* ...
