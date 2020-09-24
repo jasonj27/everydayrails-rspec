@@ -1,6 +1,8 @@
-# Project Manger(WIP)
+# Project Manger (WIP)
 
-Demo site for learning Rails RSpec. (Test not include yet)
+[![Build Status](https://travis-ci.com/jasonj27/everydayrails-rspec.svg?branch=master)](https://travis-ci.com/jasonj27/everydayrails-rspec)
+
+Demo site for learning Rails RSpec. (Test adding)
 
 * Book: [Everyday Rails Testing with RSpec](https://leanpub.com/everydayrailsrspec)
 
