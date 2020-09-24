@@ -13,7 +13,6 @@ module EverydayrailsRspec
 
     config.generators do |g|
       g.test_framework :rspec,
-        fixatures: false,
         view_specs: false,
         helper_specs: false,
         routing_specs: false
