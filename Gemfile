@@ -40,6 +40,8 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'solargraph', '~> 0.39.15'
   gem 'faker', require: false #for sample data in dev
+  gem 'guard'
+  gem 'guard-rspec'
 end
 
 group :test do
