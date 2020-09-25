@@ -1,6 +1,7 @@
 # Project Manger (WIP)
 
 [![Build Status](https://travis-ci.com/jasonj27/everydayrails-rspec.svg?branch=master)](https://travis-ci.com/jasonj27/everydayrails-rspec)
+[![codecov](https://codecov.io/gh/jasonj27/everydayrails-rspec/branch/master/graph/badge.svg)](https://codecov.io/gh/jasonj27/everydayrails-rspec)
 
 Demo site for learning Rails RSpec. (Test adding)
 
