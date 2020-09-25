@@ -108,7 +108,7 @@ RSpec.describe ProjectsController, type: :controller do
 
       it "redirects to dashboard" do
         sign_in @user
-        get :edit params: { id: @project.id }
+        get :edit, params: { id: @project.id }
 
         expect(response).to redirect_to root_path
       end
