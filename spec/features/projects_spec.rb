@@ -1,14 +1,13 @@
 require 'rails_helper'
 
 RSpec.feature "Projects", type: :feature do
+  include LoginSupport
+
   scenario "user creates a new project" do
     user = FactoryBot.create(:user)
 
-    visit root_path
-    click_link "Sign in"
-    fill_in "Email", with: user.email
-    fill_in "Password", with: user.password
-    click_button "Log in"
+    sign_in user
+    visit root_path #devise create the session only, need to visit page manually
 
     expect {
       click_link "New Project"
