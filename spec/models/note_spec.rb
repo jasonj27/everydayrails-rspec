@@ -8,11 +8,13 @@ RSpec.describe Note, type: :model do
       email:      "joetester@example.com",
       password:   "dottle-nouveau-pavilion-tights-furze",
     )
-
+    
     @project = @user.projects.create(
       name: "Test Project",
     )
   end
+  
+  it{ should have_one_attached(:attachment) }
 
   it "is valid with a user, project, and message" do
     note = Note.new(
