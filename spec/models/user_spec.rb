@@ -15,4 +15,11 @@ RSpec.describe User, type: :model do
 
     expect(user.name).to eq "John Doe"
   end
+
+  it "performs geocoding" do
+    user = FactoryBot.create(:user, last_sign_in_ip: "161.185.207.20")
+    expect {
+      user.geocode
+    }.to change(user, :location).from(nil).to("New York City, New York, US")
+  end
 end
