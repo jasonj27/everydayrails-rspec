@@ -18,7 +18,7 @@ local:
 google:
   service: GCS
   project: everydayrails-rspec
-  credentials: <%= ENV.fetch("GCS") %>
+  credentials: <%= ENV.fetch("GCS", "test") %>
   bucket: everydayrails-rspec-storage
 
 # Use rails credentials:edit to set the Azure Storage secret (as azure_storage:storage_access_key)
