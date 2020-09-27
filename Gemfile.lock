@@ -308,6 +308,8 @@ GEM
       rubyzip (>= 1.2.2)
     semantic_range (2.3.0)
     shellany (0.0.1)
+    shoulda-matchers (4.4.1)
+      activesupport (>= 4.2.0)
     signet (0.14.0)
       addressable (~> 2.3)
       faraday (>= 0.17.3, < 2.0)
@@ -404,6 +406,7 @@ DEPENDENCIES
   rspec-rails (~> 4.0, >= 4.0.1)
   sass-rails (>= 6)
   selenium-webdriver
+  shoulda-matchers (~> 4.4, >= 4.4.1)
   simplecov
   solargraph (~> 0.39.15)
   spring
