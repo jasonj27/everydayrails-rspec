@@ -1,4 +1,9 @@
 RailsAdmin.config do |config|
+  config.authorize_with do
+    redirect_to main_app.root_path unless current_user.is_admin?
+  end
+
+  config.main_app_name = ["Projects Manager", "Admin"]
 
   ### Popular gems integration
 
